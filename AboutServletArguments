@@ -41,3 +41,15 @@
 2.有默认构造器
 3.实现序列化接口Serialization
 4.有个get和set方法
+
+#如果使用mysql数据库
+creat datebase jsd1701db
+default character set utf-8
+如果没有，处理方法为
+mysql处理中文需要注意的问题
+mysql的某些驱动，默认会使用"IOS8869-1"来编码，
+对于中文，就会发生乱码。
+解决方式：
+jdbc:mysql://localhost:3306/jsd1701db?"+
+"useUnicode=true&characterEncoding=utf8"
+
