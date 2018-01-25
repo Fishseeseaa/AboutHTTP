@@ -1,6 +1,0 @@
-<此参数可以被多个Servlet公用。
-在tomcat启动时，它会自动创建ServletContext对象，并且调用该对象的方法自动读取参数>
-<context-param>
-  <param-name></param-name>
-  <param-value><param-value>
-</context-param>
