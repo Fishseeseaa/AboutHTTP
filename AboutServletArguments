@@ -1,7 +1,8 @@
-##什么请求方式
--浏览器向服务器传输数据的方案（策略）
--需要掌握2种方式：GET、POST
+# 什么请求方式
+浏览器向服务器传输数据的方案（策略）
+需要掌握2种方式：GET、POST
 ##GET
+
 -采用路径传参
 -参数在传递过程中可见，隐私性差
 -可以传递的参数较小
@@ -52,4 +53,9 @@ mysql的某些驱动，默认会使用"IOS8869-1"来编码，
 解决方式：
 jdbc:mysql://localhost:3306/jsd1701db?"+
 "useUnicode=true&characterEncoding=utf8"
+
+  void main()
+  {
+  printf("Hello, Markdown.");
+  }
 
