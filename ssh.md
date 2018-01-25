@@ -20,21 +20,9 @@ $ ssh-keygen -t rsa -C "humingx@yeah.net"
 
 ## 4、登陆Github, 添加 ssh 。
 把id_rsa.pub文件里的内容复制到这里
-
-
-
-
-
-
-
-
-
-
-
 ## 5、测试：
     $ ssh -T git@github.com
 你将会看到：
-
     The authenticity of host 'github.com (207.97.227.239)' can't be established.
     RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
     Are you sure you want to continue connecting (yes/no)?
@@ -44,7 +32,7 @@ $ ssh-keygen -t rsa -C "humingx@yeah.net"
 如果看到Hi后面是你的用户名，就说明成功了。
 
 
-6、修改.git文件夹下config中的url。
+## 6、修改.git文件夹下config中的url。
 修改前
 
     [remote "origin"]
@@ -55,4 +43,4 @@ $ ssh-keygen -t rsa -C "humingx@yeah.net"
     [remote "origin"]
     url = git@github.com:humingx/humingx.github.io.git
     fetch = +refs/heads/*:refs/remotes/origin/*
-7、发布
+## 7、发布
