@@ -3,7 +3,7 @@
     $ git config --global user.email "fishseesea@yeah.net"
 ## 2、生成密钥
 
-    $ ssh-keygen -t rsa -C "humingx@yeah.net"
+    $ ssh-keygen -t rsa -C "fishseesea@yeah.net"
 连续3个回车。如果不需要密码的话。
 最后得到了两个文件：id_rsa和id_rsa.pub。
 如果不是第一次，就选择overwrite.
@@ -29,7 +29,7 @@
     Are you sure you want to continue connecting (yes/no)?
 选择 yes
 
-    Hi humingx! You've successfully authenticated, but GitHub does not provide shell access.
+    Hi fishseesea! You've successfully authenticated, but GitHub does not provide shell access.
 如果看到Hi后面是你的用户名，就说明成功了。
 
 
@@ -37,11 +37,11 @@
 修改前
 
     [remote "origin"]
-    url = https://github.com/humingx/humingx.github.io.git
+    url = https://github.com/fishseesea/fishseesea.github.io.git
     fetch = +refs/heads/*:refs/remotes/origin/*
 修改后
 
     [remote "origin"]
-    url = git@github.com:humingx/humingx.github.io.git
+    url = git@github.com:fishseesea/fishseesea.github.io.git
     fetch = +refs/heads/*:refs/remotes/origin/*
 ## 7、发布
