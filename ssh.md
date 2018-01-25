@@ -1,8 +1,9 @@
 ## 1、设置Git的user name和email：(如果是第一次的话)
-$ git config --global user.name "humingx"
-$ git config --global user.email "humingx@yeah.net"
+    $ git config --global user.name "fishseesea"
+    $ git config --global user.email "fishseesea@yeah.net"
 ## 2、生成密钥
-$ ssh-keygen -t rsa -C "humingx@yeah.net"
+
+    $ ssh-keygen -t rsa -C "humingx@yeah.net"
 连续3个回车。如果不需要密码的话。
 最后得到了两个文件：id_rsa和id_rsa.pub。
 如果不是第一次，就选择overwrite.
