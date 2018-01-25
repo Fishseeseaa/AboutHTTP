@@ -1,61 +1,58 @@
 # 什么请求方式
 浏览器向服务器传输数据的方案（策略）
 需要掌握2种方式：GET、POST
-##GET
 
--采用路径传参
--参数在传递过程中可见，隐私性差
--可以传递的参数较小
->默认所有的请求都是GET请求
-##POST
--采用实体内容传参
--参数在传递过程中不可见，隐私性好
--传递参数的大小不受限制
->表单上加method="post"则为POST请求
+## GET
+采用路径传参
+参数在传递过程中可见，隐私性差
+可以传递的参数较小
+> 默认所有的请求都是GET请求
+## POST
+采用实体内容传参
+参数在传递过程中不可见，隐私性好
+传递参数的大小不受限制
+> 表单上加method="post"则为POST请求
 
-##使用场景
--向服务器索取（查询）数据时用GET
--向服务器提交数据时用POST
+## 使用场景
+向服务器索取（查询）数据时用GET
+向服务器提交数据时用POST
 
-##三种参数传递方法
-##第一种
+# 三种参数传递方法
+## 第一种
 1.采用ISO8859-1将乱码的String还原成byte。
 2.采用UTF-8将byte转成String。
 优点:对GET和POST都有效
 缺点：麻烦
 
-##第二种
+## 第二种
 修改serve.xml，在65行加URIEnconding="UTF-8"。
 优点：简单。
 缺点：只对GET有效，对所有项目都有影响
 
-##第三种
+## 第三种
 在获取参数前，增加request.setCharacterEnconding("UTF-8");
 在发送消息时用res.setContentType("text/html;charset=UTF-8");
 优点：简单
 缺点：只对POST有效。reUTF-8
 
-#补充
-##什么是JavaBean
+# 补充
+## 什么是JavaBean
 满足如下规范的类：<br>
 1.有package
 2.有默认构造器
 3.实现序列化接口Serialization
 4.有个get和set方法
 
-#如果使用mysql数据库
+# 如果使用mysql数据库
 creat datebase jsd1701db
 default character set utf-8
 如果没有，处理方法为
 mysql处理中文需要注意的问题
 mysql的某些驱动，默认会使用"IOS8869-1"来编码，
 对于中文，就会发生乱码。
-解决方式：
+> 解决方式：
 jdbc:mysql://localhost:3306/jsd1701db?"+
 "useUnicode=true&characterEncoding=utf8"
 
-  void main()
-  {
-  printf("Hello, Markdown.");
-  }
+
 
