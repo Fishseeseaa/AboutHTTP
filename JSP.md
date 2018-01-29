@@ -21,17 +21,17 @@ jsp其实是一个以".jsp"的后缀的文件，该文件的内容主要是html�
     容器会自动生成获得这些对象的代码。
  ### JSP页面中的隐含对象
  
-      隐含对象          类型                  说明
-      request       HttpServletRequest       请求信息
-      response      HttpServletResponse      响应信息
-      out           JSPWriter（PrinterWriter）输出的数据流
-      session       HttpSession              会话
-      application   ServletContext           全局的上下文对象
-      pageContext   PageContext              JSP页面上下文
-      page          Object                   JSP页面本身
-      config        ServletConfig            Servlet配置对象
-      exception     Throwable                捕获页面异常
- 
+                隐含对象          类型                  说明
+                request       HttpServletRequest       请求信息
+                response      HttpServletResponse      响应信息
+                out           JSPWriter（PrinterWriter）输出的数据流
+                session       HttpSession              会话
+                application   ServletContext           全局的上下文对象
+                pageContext   PageContext              JSP页面上下文
+                page          Object                   JSP页面本身
+                config        ServletConfig            Servlet配置对象
+                exception     Throwable                捕获页面异常
+
  # 指令
     1）什么是指令？
     通知容器，在将jsp文件展缓成servlet类时，做一些额外的处理，比如包
