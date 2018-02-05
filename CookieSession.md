@@ -29,3 +29,7 @@
 #### 如果浏览器禁用Cookie,Session还能用吗？
 #### 答案:不能，但有其他的解决方案
 #### 服务器在默认情况下，会使用Cookie的方式将SessionId发送给浏览器，如果用户禁止Cookie，则SessuibId不会被浏览器保存，此时服务器可以使用如URL重写这样的方式来发送SessionId
+### 如何删除Session对象
+#### 立即删除Session对象：
+    Session.invalidate()
+### Session的优缺点
