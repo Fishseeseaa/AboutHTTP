@@ -18,6 +18,14 @@
     <%--<span>${cookie.adminCode.value}</span>--%>
     <!--也可以用EL从session中取值，EL默认的取值范围
         分别是page、request、session、application-->
+### 如何使用Session绑定对象
+#### 绑定对象
+    void Session.setAttribute(String name,Object,object)
+#### 获取绑定对象
+    Object Session.getAttribute(String name)
+#### 移除绑定对象
+    void Session .removeAttribute(String name)
+#### 注：getAttribute方法的返回值是Object类型，在去除数据时要对其进行数据类型转换，且必须与我们存入的数据类型一致 
 ### 什么是Session超时
 #### Web服务器会将空闲时间过长的Session对象删除掉，以节省服务器内存空间资源
 #### web服务器缺省的超时时间限制：一般是30分钟
