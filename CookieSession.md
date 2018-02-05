@@ -40,4 +40,10 @@
 ### 如何删除Session对象
 #### 立即删除Session对象：
     Session.invalidate()
-### Session的优缺点
+## Session的优缺点
+### 优点
+#### 安全(将状态保存在服务器端)
+#### Session能够保存的数据类型更丰富，Cookie只能保存字符串
+#### Session能够保存更多的数据，Cookie大约保存4k
+### 缺点
+#### Session将状态保存在服务器端，占用服务器的内存，如果用户量过大，会严重影响服务器的性能
