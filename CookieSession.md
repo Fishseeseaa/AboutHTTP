@@ -12,3 +12,9 @@
 ##### cookie只能保存少量的数据，大约4kb左右
 ##### cookie的个数是有限制的
 ##### cookie只能保存字符串
+## Session
+    <!-- 用EL从cookie中取值:cookie.key.value
+      其中key是变化的，而cookie.adminCode.value固定不变。-->
+    <%--<span>${cookie.adminCode.value}</span>--%>
+    <!--也可以用EL从session中取值，EL默认的取值范围
+        分别是page、request、session、application-->
