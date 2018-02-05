@@ -18,3 +18,14 @@
     <%--<span>${cookie.adminCode.value}</span>--%>
     <!--也可以用EL从session中取值，EL默认的取值范围
         分别是page、request、session、application-->
+### 什么是Session超时
+#### Web服务器会将空闲时间过长的Session对象删除掉，以节省服务器内存空间资源
+#### web服务器缺省的超时时间限制：一般是30分钟
+### 荣国修改tomcat中 conf/web.xml文件的设置
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+### 浏览器 禁用Cookie的后果
+#### 如果浏览器禁用Cookie,Session还能用吗？
+#### 答案:不能，但有其他的解决方案
+#### 服务器在默认情况下，会使用Cookie的方式将SessionId发送给浏览器，如果用户禁止Cookie，则SessuibId不会被浏览器保存，此时服务器可以使用如URL重写这样的方式来发送SessionId
